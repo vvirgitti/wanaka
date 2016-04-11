@@ -1,0 +1,32 @@
+{
+  "name": "wanaka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "ejs": "^2.4.1",
+    "express": "^4.13.1",
+    "lodash": "^4.6.1",
+    "mongodb": "^2.1.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-register": "^6.5.2",
+    "chai": "^3.2.0",
+    "grunt-mocha-test": "^0.12.7",
+    "grunt-nodemon": "^0.4.1",
+    "gulp": "^3.9.0",
+    "nodemon": "^1.4.0",
+    "sinon": "^1.17.3",
+    "mocha": "^2.2.5",
+    "path": "^0.11.14",
+    "supertest": "^1.0.1"
+  },
+  "scripts": {
+    "start": "nodemon register.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
