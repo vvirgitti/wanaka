@@ -1,0 +1,20 @@
+html {
+  background-color: white;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.collapse.navbar-collapse {
+  padding-left: 0px;
+}
+
+.story {
+  background-color: red;
+}
+
+.ourStory2 {
+  background-color: blue;
+}
