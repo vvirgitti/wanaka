@@ -1,5 +1,6 @@
 html {
   background-color: white;
+  font-family: 'Poiret One', cursive;
 }
 
 li {
@@ -7,14 +8,28 @@ li {
   list-style: none;
 }
 
+.title {
+  position: fixed;
+  padding: 5px 0;
+}
+
 .collapse.navbar-collapse {
   padding-left: 0px;
 }
 
-.story {
-  background-color: red;
+.content {
+  position: absolute;
 }
 
-.ourStory2 {
-  background-color: blue;
+.navbar {
+  position: fixed;
+  margin-top: 80px;
+}
+
+.story {
+  padding-top: 120px;
+}
+
+h1, h2, li {
+  font-family: 'Poiret One', cursive;
 }
