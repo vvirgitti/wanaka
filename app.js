@@ -25,7 +25,8 @@ const hbs = exphbs.create({
 app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
 
-handlebars.registerPartial('header', '{{header}}')
+handlebars.registerPartial('header', '{{header}}');
+handlebars.registerPartial('footer', '{{footer}}');
 
 app.use(express.static(__dirname));
 
