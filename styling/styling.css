@@ -1,5 +1,5 @@
-html, body {
-  height: 100%;
+h1, h2, li, header, footer, p {
+  font-family: 'Poiret One', cursive;
 }
 
 html {
@@ -43,8 +43,4 @@ li {
 
 .story {
   padding-top: 120px;
-}
-
-h1, h2, li, header, footer {
-  font-family: 'Poiret One', cursive;
 }

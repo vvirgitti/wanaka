@@ -31,11 +31,11 @@ handlebars.registerPartial('footer', '{{footer}}');
 app.use(express.static(__dirname));
 
 app.get('/', function(req, res){
-  res.render('layout.hbs', {root: __dirname + '/views'});
+  res.render('index');
 });
 
 app.get('/day', function(req, res){
-  res.render('/views/day.hbs', {root: __dirname});
+  res.render('day');
 });
 
 module.exports = app;
