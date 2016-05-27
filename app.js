@@ -38,4 +38,12 @@ app.get('/day', function(req, res){
   res.render('day');
 });
 
+app.get('/venue', function(req, res){
+  res.render('venue');
+});
+
+app.get('/tips', function(req, res){
+  res.render('tips');
+});
+
 module.exports = app;
