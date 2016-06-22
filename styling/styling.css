@@ -55,6 +55,11 @@ li {
   padding: 5px 0;
 }
 
+.header-whole {
+  background-color: white;
+  height: 100px;
+}
+
 .content {
   position: absolute;
   margin-top: 150px;
@@ -72,4 +77,8 @@ li {
 
 .story {
   padding-top: 120px;
+}
+
+img {
+  width: 100%;
 }
