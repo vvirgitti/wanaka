@@ -1,8 +1,6 @@
 'use strict';
 
-require('babel-register');
-
-import app from './app.js';
+const app = require('./app.js');
 
 const port = process.env.PORT || 3000;
 

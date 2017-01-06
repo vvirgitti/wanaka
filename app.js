@@ -1,11 +1,9 @@
 'use strict';
 
-require('babel-register');
-
-import express from 'express';
-import bodyParser from 'body-parser';
-import handlebars from 'handlebars';
-import exphbs from 'express-handlebars';
+const express = require('express');
+const bodyParser = require('body-parser');
+const handlebars = require('handlebars');
+const exphbs = require('express-handlebars');
 
 const app = express();
 

@@ -13,13 +13,10 @@
     "lodash": "3.10.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.5.1",
-    "babel-preset-es2015": "^6.5.0",
-    "babel-register": "^6.5.2",
     "nodemon": "^1.4.0"
   },
   "scripts": {
-    "start": "nodemon register.js"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC"
