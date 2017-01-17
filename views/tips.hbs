@@ -24,7 +24,7 @@
 
           </ul>
     </div>
-    <div class=accomodation>
+    <div class="accomodation">
       <h1>Accomodation</h1>
 
         <p>Queenstown offers a wide range of accommodation options. However, you should
@@ -37,11 +37,13 @@
         <ul>
           <li>Hotels</li>
             <ul>
-              <li>Sofitel</li>
-              <li>Eichard’s Private Hotel</li>
+              {{#each objects}}
+                <li>{{name}}</li>
+                <li>{{address}}</li>
+                <li>{{phone}}</li>
+                <li>{{website}}</li>
+                {{/each}}
             </ul>
-          <li>Apartments and self-contained accomodation</li>
-          <li>Cabin</li>
         </ul>
   </div>
 
