@@ -29,7 +29,15 @@ handlebars.registerPartial('footer', '{{footer}}');
 app.use(express.static(__dirname));
 
 app.get('/', function(req, res){
-  res.render('index');
+  res.render('index-en');
+});
+
+app.get('/en/', function(req, res){
+  res.render('index-en');
+});
+
+app.get('/fr/', function(req, res){
+  res.render('index-fr');
 });
 
 app.get('/day', function(req, res){
