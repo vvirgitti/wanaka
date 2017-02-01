@@ -4,14 +4,17 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const handlebars = require('handlebars');
 const exphbs = require('express-handlebars');
+const path = require('path')
+
+const enRouter = require('./routes/en');
 
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.set('views', __dirname + '/views');
-app.set('styling', __dirname + '/styling');
+app.set('views', path.join(__dirname + '/views'));
+app.set('styling', path.join(__dirname + '/styling'));
 
 const hbs = exphbs.create({
   defaultLayout: 'layout',
@@ -28,28 +31,18 @@ handlebars.registerPartial('footer', '{{footer}}');
 
 app.use(express.static(__dirname));
 
+app.use('/en', enRouter);
+
 app.get('/', function(req, res){
   res.render('index-en');
 });
 
-app.get('/en/', function(req, res){
+app.get('/en', function(req, res){
   res.render('index-en');
 });
 
-app.get('/fr/', function(req, res){
+app.get('/fr', function(req, res){
   res.render('index-fr');
-});
-
-app.get('/day', function(req, res){
-  res.render('day');
-});
-
-app.get('/venue', function(req, res){
-  res.render('venue');
-});
-
-app.get('/tips', function(req, res){
-  res.render('tips');
 });
 
 module.exports = app;
