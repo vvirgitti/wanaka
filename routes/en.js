@@ -6,8 +6,8 @@ enRouter.get('/day', function(req, res){
   res.render('day-en');
 });
 
-enRouter.get('/venue', function(req, res){
-  res.render('venue-en');
+enRouter.get('/location', function(req, res){
+  res.render('location-en');
 });
 
 enRouter.get('/tips', function(req, res){
