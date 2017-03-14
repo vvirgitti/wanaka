@@ -1,3 +1,12 @@
 h1, h2, li,ul, header, footer, p {
   font-family: 'Varela Round', sans-serif;
 }
+
+html {
+  margin: auto 20px;
+}
+
+#home {
+  display: flex;
+  
+}
