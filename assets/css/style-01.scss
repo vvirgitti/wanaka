@@ -1,0 +1,837 @@
+/*
+  *
+  * Project Name: Manten - Style 1
+  * URL: http://templatesuper.com
+  * Version: 1.0
+  *
+  * Author: Adnan
+  *
+*/
+
+// COLOR
+$primary-color : #e46bad;
+
+// IMPORT FONTS
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
+
+// IMPORT ICONS
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+//PACE
+.pace {
+  -moz-user-select       : none;
+  -webkit-user-select    : none;
+  user-select            : none;
+  -webkit-pointer-events : none;
+  pointer-events         : none;
+}
+
+.pace-inactive {
+  display : none;
+}
+
+.pace .pace-progress {
+  z-index    : 99999999;
+  position   : fixed;
+  top        : 0;
+  right      : 100%;
+  width      : 100%;
+  height     : 2px;
+  background : $primary-color;
+}
+
+body,
+html {
+  height     : 100%;
+  min-height : 100%;
+}
+
+body {
+  position       : relative;
+  margin         : 0;
+  padding        : 0;
+  color          : #828282;
+  font-family    : 'Pontano Sans',
+                   sans-serif;
+  font-size      : 100%;
+  letter-spacing : 1px;
+}
+
+a, a:visited, a:focus, a:active, a:hover, button:focus{
+    outline:0 none !important;
+}
+
+
+/*
+  #########################################################################
+  #
+  Header 01
+  #########################################################################
+*/
+
+
+.header-01 {
+  height : 100%;
+
+  .container-fluid {
+    position : absolute;
+    bottom   : 40%;
+    width    : 100%;
+    padding  : 0;
+  }
+
+  .flexslider .slides > li {
+    display             : none;
+    width               : 100%;
+    height              : 100%;
+    background-position : center;
+    background-size: cover;
+  }
+
+  .flex-viewport,
+  .flexslider-container,
+  .flexslider .slides {
+    height : 100%;
+  }
+
+  ul.slides {
+    margin  : 0;
+    padding : 0;
+  }
+
+  .flexslider {
+    width    : 100%;
+    height   : 100%;
+    margin   : 0;
+    padding  : 0;
+    overflow : hidden;
+    border   : 0;
+  }
+
+  .flex-control-nav {
+    position     : absolute;
+    bottom       : 0;
+    width        : 100%;
+    padding-left : 0;
+    text-align   : center;
+  }
+
+  .flex-control-nav li {
+    display  : inline-block;
+    *display : inline;
+    zoom     : 1;
+    margin   : 0 6px;
+  }
+
+  .flex-control-paging li a {
+    display               : block;
+    width                 : 6px;
+    height                : 6px;
+    -moz-border-radius    : 20px;
+    -webkit-border-radius : 20px;
+    border-radius         : 20px;
+    background            : #666;
+    background            : rgba(0, 0, 0, 0.5);
+    -moz-box-shadow       : inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -o-box-shadow         : inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow    : inset 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow            : inset 0 0 3px rgba(0, 0, 0, 0.3);
+    text-indent           : -9999px;
+    cursor                : pointer;
+  }
+
+  .flex-control-paging li a:hover {
+    background : #333;
+    background : rgba(0, 0, 0, 0.7);
+  }
+
+  .flex-control-paging li a.flex-active {
+    background : #000;
+    background : rgba(0, 0, 0, 0.9);
+    cursor     : default;
+  }
+
+  .navbar-default {
+    z-index    : 101;
+    padding    : 20px 0;
+    border     : none;
+    background : #fff;
+  }
+
+  .navbar-brand {
+    border-radius  : 73px;
+    text-transform : uppercase;
+    font-weight    : bold;
+    letter-spacing : 3px;
+  }
+
+  .navbar-brand:focus,
+  .navbar-brand:hover {
+    border : transparent;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    padding        : 6px 25px;
+    color          : #777;
+    border-radius  : 50px;
+    text-transform : uppercase;
+    letter-spacing : 3px;
+  }
+
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:focus,
+  .navbar-default .navbar-nav > .active > a:hover {
+    padding          : 6PX 25PX;
+    color            : #fff;
+    border-radius    : 50px;
+    background-color : $primary-color;
+    letter-spacing   : 3px;
+  }
+
+  .navbar-right {
+    margin-top : 8px;
+  }
+
+  h1 {
+    z-index        : 100;
+    display        : inline-block;
+    position       : relative;
+    text-align     : center;
+    text-transform : uppercase;
+    font-family    : 'Varela Round',
+                     sans-serif;
+    font-size      : 5em;
+    font-weight    : bold;
+    font-weight    : 500;
+    white-space    : nowrap;
+  }
+
+  h1:after,
+  h1:before {
+    content          : " ";
+    display          : block;
+    position         : absolute;
+    bottom           : -.5em;
+    width            : 1em;
+    height           : 100%;
+    background-color : lighten($primary-color, 25%);
+    pointer-events   : none;
+  }
+
+  h1:after {
+    z-index : -1;
+    right   : -.57em;
+  }
+
+  h1:before {
+    z-index : -1;
+    top     : -.5em;
+    bottom  : auto;
+    left    : -.57em;
+  }
+
+  h1 a {
+    display          : inline-block;
+    position         : relative;
+    padding          : 0.15em 0.75em;
+    color            : #fff;
+    background-color : $primary-color;
+    text-decoration  : none;
+  }
+
+  h1 a:after,
+  h1 a:before {
+    content        : " ";
+    display        : block;
+    position       : absolute;
+    bottom         : -.5em;
+    left           : -.05em;
+    width          : 0;
+    height         : 0;
+    pointer-events : none;
+  }
+
+  h1 a:before {
+    top           : -.5em;
+    bottom        : auto;
+    border-bottom : 0.5em solid lighten($primary-color, 15%);
+    border-left   : 0.5em solid transparent;
+  }
+
+  h1 a:after {
+    right        : -.05em;
+    left         : auto;
+    border-top   : 0.5em solid lighten($primary-color, 9%);
+    border-right : 0.5em solid transparent;
+  }
+
+  h1 a span {
+    display        : block;
+    font-size      : 14px !important;
+    letter-spacing : 2px;
+  }
+}
+
+/*
+  #########################################################################
+  #
+  Story 01
+  #########################################################################
+*/
+
+
+.story-01 {
+  padding : 120px 0;
+
+  h3 {
+    color       : $primary-color;
+    font-family : 'Varela Round',
+                  sans-serif;
+    font-weight : bold;
+  }
+
+  h3,
+  h5 {
+    text-align     : center;
+    text-transform : uppercase;
+    letter-spacing : 2px;
+  }
+
+  h5 {
+    color : #828282;
+  }
+
+  .title {
+    margin-bottom : 50px;
+  }
+
+  p {
+    font-size   : 1.6em;
+    line-height : 28px;
+  }
+
+  .left {
+    img {
+      position : relative;
+      top      : -20px;
+      width    : 150px;
+      float    : right;
+    }
+
+    p {
+      padding-right : 170px;
+      text-align    : right;
+    }
+  }
+
+  .right {
+    img {
+      position : relative;
+      top      : -20px;
+      width    : 150px;
+      float    : left;
+    }
+
+    p {
+      padding-left : 170px;
+      text-align   : left;
+    }
+  }
+}
+
+/*
+  #########################################################################
+  #
+  Wedding 01
+  #########################################################################
+*/
+
+
+.wedding-01 {
+  padding    : 120px 0;
+  background : lighten($primary-color, 30%);
+
+  .btn-default {
+    margin-left    : 20px;
+    padding        : 10px 25px;
+    color          : #fff;
+    border         : 1px solid $primary-color;
+    border-radius  : 30px;
+    background     : $primary-color;
+    letter-spacing : 3px;
+  }
+
+  .btn-default:hover {
+    color      : $primary-color;
+    border     : 1px solid $primary-color;
+    background : transparent;
+  }
+
+  h3 {
+    margin-bottom  : 30px;
+    color          : $primary-color;
+    text-transform : uppercase;
+    font-family    : 'Varela Round',
+                     sans-serif;
+    font-weight    : bold;
+    letter-spacing : 2px;
+  }
+
+  p {
+    font-size : 1.6em;
+  }
+}
+
+/*
+  #########################################################################
+  #
+  Accomm 01
+  #########################################################################
+*/
+
+
+.accomm-01 {
+  padding : 120px 0;
+
+  img {
+    width  : 150px;
+    height : 150px;
+    float  : left;
+  }
+
+  h3 {
+    margin-bottom  : 50px;
+    color          : $primary-color;
+    text-transform : uppercase;
+    font-family    : 'Varela Round',
+                     sans-serif;
+    font-weight    : bold;
+    letter-spacing : 2px;
+  }
+
+  .text-left img {
+    float : right;
+  }
+
+  .text-left h5,
+  .text-left p {
+    padding-right : 170px;
+  }
+
+  .text-right h5,
+  .text-right p {
+    padding-left : 170px;
+  }
+
+  h5 {
+    text-transform : uppercase;
+    font-weight    : bold;
+    letter-spacing : 2px;
+  }
+
+  p {
+    font-size   : 1.6em;
+    line-height : 28px;
+  }
+}
+
+/*
+  #########################################################################
+  #
+  todo 01
+  #########################################################################
+*/
+
+
+.todo-01 {
+  padding    : 120px 0;
+  background : #F7EBF5;
+
+  img {
+    width     : 100%;
+    max-width : 200px;
+  }
+
+  h3 {
+    margin-bottom : 50px;
+    color         : $primary-color;
+    font-family   : 'Varela Round',
+                    sans-serif;
+    font-weight   : bold;
+  }
+
+  h5 {
+    font-weight    : bold;
+    letter-spacing : 2px;
+  }
+
+  p {
+    font-size : 1.4em;
+  }
+
+  .btn-default {
+    margin-top     : 10px;
+    color          : #fff;
+    border         : 1px solid $primary-color;
+    border-radius  : 0;
+    border-radius  : 30px;
+    background     : $primary-color;
+    text-transform : uppercase;
+    font-size      : 12px;
+    letter-spacing : 2px;
+  }
+
+  .btn-default:hover {
+    color      : $primary-color;
+    border     : 1px solid $primary-color;
+    background : transparent;
+  }
+}
+
+/*
+  #########################################################################
+  #
+  RSVP 01
+  #########################################################################
+*/
+
+
+.rsvp-01 {
+  padding : 120px 0;
+
+  h3 {
+    margin-bottom  : 20px;
+    color          : $primary-color;
+    text-transform : uppercase;
+    font-family    : 'Varela Round',
+                     sans-serif;
+    font-weight    : bold;
+    letter-spacing : 2px;
+  }
+
+  p {
+    margin-bottom : 40px;
+    font-size     : 1.6em;
+    line-height   : 28px;
+  }
+
+  .form-group {
+    position : relative;
+  }
+
+  .form-control {
+    width         : 400px;
+    height        : 50px;
+    border-radius : 30px;
+  }
+
+  .btn-default {
+    position       : absolute;
+    top            : 0;
+    right          : 0;
+    height         : 50px;
+    padding-right  : 25px;
+    padding-left   : 25px;
+    color          : #fff;
+    border         : 1px solid $primary-color;
+    border-radius  : 0 30px 30px 0;
+    background     : $primary-color;
+    letter-spacing : 2px;
+  }
+
+  .btn-default:hover {
+    color      : $primary-color;
+    border     : 1px solid $primary-color;
+    background : transparent;
+  }
+
+  ::-webkit-input-placeholder {
+    text-align     : left;
+    text-transform : uppercase;
+    letter-spacing : 2px;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    text-align : center;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align : center;
+  }
+
+  :-ms-input-placeholder {
+    text-align : center;
+  }
+}
+
+footer {
+  padding        : 50px 0;
+  color          : #828282;
+  border-top     : 2px dashed #dedede;
+  text-align     : center;
+  line-height    : 20px;
+  letter-spacing : 2px;
+}
+
+.scroll-to-top a {
+  display     : block;
+  width       : 40px;
+  height      : 40px;
+  color       : #fff;
+  font-size   : 20px;
+  line-height : 40px;
+}
+
+.scroll-to-top {
+  z-index            : 9999;
+  position           : fixed;
+  right              : 20px;
+  bottom             : 20px;
+  opacity            : 0;
+  border-radius      : 4px;
+  background         : $primary-color;
+  filter             : alpha(opacity=0);
+  text-align         : center;
+  -webkit-transition : opacity 0.5s;
+  transition         : opacity 0.5s;
+}
+
+.scroll-to-top.affix {
+  opacity : 0.5;
+  filter  : alpha(opacity=50);
+}
+
+.affix {
+  position : fixed;
+}
+
+/*
+  ---------------------------------------------------
+  Large Devices, Wide
+  Screens
+  -----------------------------------------------------
+*/
+
+
+@media only screen
+       and (max-width: 1200px) {
+}
+
+/*
+  --------------------------------------------------
+  Medium Devices,
+  Desktops
+  ----------------------------------------------------
+*/
+
+
+@media only screen
+       and (max-width: 992px) {
+  .header-01 {
+    h1 {
+      font-size : 3.8em;
+    }
+
+    h1 a {
+      padding : 0.3em 0.75em;
+    }
+
+    .navbar-default {
+      padding : 0;
+    }
+
+    .navbar-fixed-top {
+      z-index : 99999;
+    }
+
+    .navbar-toggle {
+      border-color : transparent;
+    }
+
+    .navbar-toggle:focus,
+    .navbar-toggle:hover {
+      background : transparent;
+    }
+  }
+}
+
+/*
+  -------------------------------------------------
+  Small Devices,
+  Tablets
+  ---------------------------------------------------
+*/
+
+
+@media only screen
+       and (max-width: 768px) {
+  .header-01 {
+    h1 {
+      font-size : 3.4em;
+    }
+
+    h1 a {
+      padding : 0.3em 0.75em;
+    }
+
+    .navbar-default {
+      padding : 0;
+    }
+
+    .navbar-fixed-top {
+      z-index : 99999;
+    }
+
+    .navbar-toggle {
+      position     : absolute;
+      right        : 0;
+      border-color : transparent;
+    }
+
+    .navbar-toggle:focus,
+    .navbar-toggle:hover {
+      background : transparent;
+    }
+
+    .navbar > .container-fluid .navbar-brand,
+    .navbar > .container .navbar-brand {
+      display : inline-block;
+      float   : none;
+    }
+
+    .navbar-header {
+      float      : none;
+      text-align : center;
+    }
+
+    .navbar-right {
+      float         : none !important;
+      margin-bottom : 10px;
+      text-align    : center;
+    }
+
+    .navbar-nav > li {
+      display : inline-block;
+      float   : none;
+    }
+  }
+
+  // STORY 01
+  .story-01 {
+    .col-md-6 {
+      margin-bottom : 20px;
+    }
+
+    img {
+      top : 0 !important;
+    }
+  }
+}
+
+/*
+  ------------------------------------------------
+  Mobile
+  -------------------------------------------------
+*/
+
+
+@media only screen
+       and (max-width: 480px) {
+  .container {
+    padding-right : 30px;
+    padding-left  : 30px;
+  }
+
+  .header-01 {
+    h1 {
+      font-size : 3em;
+    }
+
+    h1 a {
+      padding : 0.3em 0.75em;
+    }
+
+    .navbar-nav li {
+      display : block;
+    }
+
+    .navbar-default {
+      padding : 0;
+    }
+
+    .navbar-fixed-top {
+      z-index : 1000;
+    }
+
+    .navbar-header {
+      float      : none;
+      text-align : center;
+    }
+
+    .navbar-toggle {
+      border-color : transparent;
+    }
+
+    .navbar-toggle:focus,
+    .navbar-toggle:hover {
+      background : transparent;
+    }
+  }
+
+  // STORY 01
+  .story-01 {
+    .col-md-6 {
+      margin-bottom : 20px;
+      text-align    : center;
+    }
+
+    img {
+      top           : 0 !important;
+      float         : none !important;
+      margin-bottom : 20px;
+    }
+
+    p {
+      padding    : 0 !important;
+      text-align : center !important;
+    }
+  }
+
+  // ACCOMM 01
+  .accomm-01 {
+    .col-md-6 {
+      margin-bottom : 20px;
+      text-align    : center;
+    }
+
+    img {
+      float         : none !important;
+      margin-bottom : 20px;
+    }
+
+    .text-left h5,
+    .text-left p,
+    .text-right h5,
+    .text-right p {
+      padding : 0;
+    }
+  }
+
+  // WEDDING 01
+  .wedding-01 {
+    .btn-default {
+      margin-top  : 20px;
+      margin-left : 0;
+    }
+  }
+
+  // RSVP 01
+  .rsvp-01 {
+    .form-control {
+      width : 100%;
+    }
+  }
+}
