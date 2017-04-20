@@ -65,6 +65,7 @@ $(function() {
 window.sr = ScrollReveal();
 sr.reveal('#home h1', {
     duration: 500,
+    delay: 0,
     reset: true
 }, 50);
 sr.reveal('#story .col-md-12, #story .col-md-6', {
