@@ -64,8 +64,9 @@ $(function() {
 //SCROLLREVEAL
 window.sr = ScrollReveal();
 sr.reveal('#home h1', {
-    duration: 1500,
-    reset: true
+    duration: 500,
+    reset: true,
+    delay: 0
 }, 50);
 sr.reveal('#story .col-md-12, #story .col-md-6', {
     duration: 1500,
@@ -80,7 +81,7 @@ sr.reveal('#accomm .col-md-12, #accomm .col-md-6', {
     reset: true
 }, 50);
 sr.reveal('#todo .col-md-12', {
-    duration: 2000,
+    duration: 1500,
     reset: true
 }, 200);
 sr.reveal('#rsvp h3, #rsvp .container', {
