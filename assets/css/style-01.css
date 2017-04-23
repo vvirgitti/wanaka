@@ -228,7 +228,7 @@ a, a:visited, a:focus, a:active, a:hover, button:focus {
     line-height: 28px; }
   .story-01 .left img {
     position: relative;
-    top: -20px;
+    top: -4px;
     width: 150px;
     float: right; }
   .story-01 .left p {
@@ -236,7 +236,7 @@ a, a:visited, a:focus, a:active, a:hover, button:focus {
     text-align: right; }
   .story-01 .right img {
     position: relative;
-    top: -20px;
+    top: -4px;
     width: 150px;
     float: left; }
   .story-01 .right p {
