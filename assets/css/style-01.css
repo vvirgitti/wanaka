@@ -315,23 +315,23 @@ a, a:visited, a:focus, a:active, a:hover, button:focus {
   todo 01
   #########################################################################
 */
-.todo-01 {
+.registry-01 {
   padding: 120px 0;
   background: #F7EBF5; }
-  .todo-01 img {
+  .registry-01 img {
     width: 100%;
     max-width: 200px; }
-  .todo-01 h3 {
+  .registry-01 h3 {
     margin-bottom: 50px;
     color: #e46bad;
     font-family: 'Varela Round', sans-serif;
     font-weight: bold; }
-  .todo-01 h5 {
+  .registry-01 h5 {
     font-weight: bold;
     letter-spacing: 2px; }
-  .todo-01 p {
+  .registry-01 p {
     font-size: 1.4em; }
-  .todo-01 .btn-default {
+  .registry-01 .btn-default {
     margin-top: 10px;
     color: #fff;
     border: 1px solid #e46bad;
@@ -341,7 +341,7 @@ a, a:visited, a:focus, a:active, a:hover, button:focus {
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 2px; }
-  .todo-01 .btn-default:hover {
+  .registry-01 .btn-default:hover {
     color: #e46bad;
     border: 1px solid #e46bad;
     background: transparent; }
